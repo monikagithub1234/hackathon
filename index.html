@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Career & Skills Advisor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎓 Personalized Career & Skills Advisor</h1>
+    <form method="POST">
+      <input type="text" name="career_input" placeholder="Eg: I am a CSE student, frontend interest" required>
+      <button type="submit">Get Advice</button>
+    </form>
+
+    {% if suggestion %}
+      <div class="output">
+        <h3>Suggestion:</h3>
+        <p>{{ suggestion }}</p>
+      </div>
+    {% endif %}
+  </div>
+</body>
+</html>
